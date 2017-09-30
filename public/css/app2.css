@@ -1,0 +1,8 @@
+.custom-filter
+{
+    margin-bottom:0;
+}
+.user-panel>.info {
+padding:0;
+position: static;
+}

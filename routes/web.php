@@ -15,9 +15,25 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('admin', function () {
-    return view('admin_template');
+Route::prefix('admin')->group(function () {
+    Route::get('', function () {
+        return view('common.list');
+    })->name('admin.dashboard');
+
+    Route::get('list', function () {
+        return view('common.list');
+    })->name('admin.list');
+
+    Route::get('add', function () {
+        return view('common.add');
+    })->name('admin.add');
+
+    Route::get('view', function () {
+        return view('common.view');
+    })->name('admin.view');
 });
+
+
 
 Auth::routes();
 
