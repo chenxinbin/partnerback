@@ -17,20 +17,20 @@ Route::get('/', function () {
 
 Route::prefix('admin')->group(function () {
     Route::get('', function () {
-        return view('common.list');
+        return view('dashboard');
     })->name('admin.dashboard');
 
-    Route::get('list', function () {
+    Route::get('object/list', function () {
         return view('common.list');
-    })->name('admin.list');
+    })->name('admin.object.list');
 
-    Route::get('add', function () {
+    Route::get('object/add', function () {
         return view('common.add');
-    })->name('admin.add');
+    })->name('admin.object.add');
 
-    Route::get('view', function () {
+    Route::get('object/view', function () {
         return view('common.view');
-    })->name('admin.view');
+    })->name('admin.object.view');
 });
 
 

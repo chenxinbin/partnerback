@@ -24,9 +24,9 @@
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="/admin/list">列表</a></li>
-            <li><a href="/admin/add">添加</a></li>
-            <li><a href="/admin/view">查看</a></li>
+            <li><a href="{{route('admin.object.list')}}">列表</a></li>
+            <li><a href="{{route('admin.object.add')}}">添加</a></li>
+            <li><a href="{{route('admin.object.view')}}">查看</a></li>
           </ul>
         </li>
         <li><a href="#"><i class="glyphicon glyphicon-user"></i> <span>客户管理</span></a></li>

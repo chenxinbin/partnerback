@@ -6,7 +6,7 @@
   <title>@yield('title')</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" href="{{ asset("vendor/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css")}}">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Ionicons -->
@@ -28,12 +28,6 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-
-
-  <!-- Google Font -->
-  <!--
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic"> -->
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -59,10 +53,10 @@ desired effect
 <div class="wrapper">
 
 <!-- Header -->
-@include('header')
+@include('layouts.adminlte_header')
 
 <!-- Sidebar -->
-@include('sidebar')
+@include('layouts.adminlte_sidebar')
 
 
   <!-- Content Wrapper. Contains page content -->
@@ -71,7 +65,7 @@ desired effect
   </div>
   <!-- /.content-wrapper -->
 
-@include('footer')
+@include('layouts.adminlte_footer')
 
 </div>
 <!-- ./wrapper -->
@@ -81,7 +75,7 @@ desired effect
 <!-- jQuery 3 -->
 <script src="{{ asset("vendor/adminlte/bower_components/jquery/dist/jquery.min.js")}}"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="{{ asset("vendor/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js")}}"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 @stack('scripts')
 <!-- AdminLTE App -->
 <script src="{{ asset("vendor/adminlte/dist/js/adminlte.min.js")}}"></script>

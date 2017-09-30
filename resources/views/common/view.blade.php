@@ -1,4 +1,4 @@
-@extends('adminlte')
+@extends('layouts.adminlte')
 
 @section('title', '管理首页')
 @section('login_username', '当前用户名')
